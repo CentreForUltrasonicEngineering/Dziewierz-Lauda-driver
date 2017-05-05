@@ -14,3 +14,6 @@ Usage is fairly obvious:
 
     current_temp_readout = lauda.read_current_temp()
 
+
+Note that the COM port used is hard-coded to "COM9". 
+At this time this can only be changed by editing the source code.
