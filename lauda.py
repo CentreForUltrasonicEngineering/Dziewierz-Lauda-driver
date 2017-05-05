@@ -14,12 +14,12 @@ from enum import Enum
 
 
 class PumpingSpeed(Enum):
-    VeryLow = 1
-    Low = 2
-    Medium = 3
-    SomewhatHighish = 4
-    AlmostHigh = 5
-    High = 6
+    a_Sedated = 1
+    a_Low = 2
+    a_Boring = 3
+    a_Typical = 4
+    a_Nice = 5
+    a_Mighty = 6
 
 
 # TODO: enable selecting a non-default COM port, or even searching for COM ports
@@ -42,7 +42,7 @@ def close():
     ThisLAUDA.close()
 
 
-def set_pumping_speed(new_speed: PumpingSpeed):
+def set_pumping_speed(new_speed: PumpingSpeed = PumpingSpeed.a_Mighty):
     """Set the pumping speed
     use .PumpingSpeed class as enum
     note that this will not automatically enable the thermostat if it is not separately enabled.
